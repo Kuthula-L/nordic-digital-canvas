@@ -38,7 +38,8 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-4"
           >
-            <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-accent to-secondary overflow-hidden relative">
+            <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-accent to-secondary overflow-hidden relative ">
+            <img src="/portfolio bg removed.png" className="absolute w-10/10 h-10/10"/>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-24 h-24 rounded-full bg-foreground/10 flex items-center justify-center">
                   <span className="text-2xl font-display font-light text-foreground/40">JD</span>

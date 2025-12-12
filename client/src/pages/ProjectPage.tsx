@@ -108,11 +108,21 @@ const ProjectPage = () => {
             className="mb-20"
           >
             <div className="aspect-video rounded-2xl overflow-hidden">
-              <img 
-                src={project.image} 
-                alt={project.title}
-                className="w-full h-full object-cover"
-              />
+              <video
+                  src={project.video}
+                    autoPlay
+                    muted
+                    loop
+                    // playsInline
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain"
+                  }}
+
+                  // alt={project.title}
+                  // className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
             </div>
           </motion.div>
 
@@ -189,10 +199,10 @@ const ProjectPage = () => {
                       key={index}
                       className="aspect-video rounded-xl overflow-hidden"
                     >
-                      <img 
-                        src={image} 
+                      <img
+                        src={image}
                         alt={`${project.title} screenshot ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                     </div>
                   ))}
@@ -217,10 +227,14 @@ const ProjectPage = () => {
                   <h3 className="text-3xl md:text-4xl font-display font-light group-hover:text-muted-foreground transition-colors">
                     {nextProject.title}
                   </h3>
-                  <p className="text-muted-foreground mt-2">{nextProject.subtitle}</p>
+                  <p className="text-muted-foreground mt-2">
+                    {nextProject.subtitle}
+                  </p>
                 </div>
                 <div className="w-14 h-14 rounded-full border border-border flex items-center justify-center group-hover:bg-foreground group-hover:border-foreground transition-all duration-300">
-                  <span className="text-muted-foreground group-hover:text-background transition-colors">→</span>
+                  <span className="text-muted-foreground group-hover:text-background transition-colors">
+                    →
+                  </span>
                 </div>
               </div>
             </Link>

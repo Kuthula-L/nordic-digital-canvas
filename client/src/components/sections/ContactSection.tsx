@@ -26,9 +26,9 @@ const ContactSection = () => {
   };
 
   const socialLinks = [
-    { label: "GitHub", href: "https://github.com", icon: "GH" },
-    { label: "LinkedIn", href: "https://linkedin.com", icon: "LI" },
-    { label: "Twitter", href: "https://twitter.com", icon: "TW" },
+    { label: "GitHub", href: "https://github.com/Kuthula-L", icon: "GH" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/kuthula-langa-187605170", icon: "LI" },
+    // { label: "Twitter", href: "https://twitter.com", icon: "TW" },
   ];
 
   return (
@@ -68,7 +68,7 @@ const ContactSection = () => {
                 className="flex items-center gap-3 text-lg font-display hover:text-muted-foreground transition-colors"
               >
                 <Mail size={20} />
-                hello@portfolio.dev
+                kuthula144@gmail.com
               </a>
             </motion.div>
 

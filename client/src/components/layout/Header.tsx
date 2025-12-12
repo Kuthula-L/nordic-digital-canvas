@@ -36,9 +36,9 @@ const Header = () => {
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-foreground flex items-center justify-center">
-              <span className="text-background text-xs font-display font-semibold">JD</span>
+              <span className="text-background text-xs font-display font-semibold">KL</span>
             </div>
-            <span className="font-display font-medium text-foreground">Portfolio</span>
+            <span className="font-display font-medium text-foreground">kuthula Langa</span>
           </Link>
 
           {/* Desktop Navigation */}
