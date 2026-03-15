@@ -5,7 +5,7 @@ import { useRef } from "react";
 const skills = [
   "React", "React Native", "TypeScript", "Node.js", 
   "Next.js", "Tailwind CSS", "PostgreSQL", "MongoDB",
-  "UI/UX Design", "Figma", "CMS", "REST APIs"
+  "UI/UX Design", "Figma", "CMS", "REST APIs", "Aws lamda", "AWS S3", "python", "Spring boot", "java", "Django", "Git"
 ];
 
 const AboutSection = () => {
@@ -93,9 +93,9 @@ const AboutSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
               {[
-                { number: "5+", label: "Years Experience" },
-                { number: "40+", label: "Projects Completed" },
-                { number: "25+", label: "Happy Clients" },
+                { number: "3+", label: "Years Experience" },
+                { number: "15+", label: "Projects Completed" },
+                { number: "5+", label: "Happy Clients" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
